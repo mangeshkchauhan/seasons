@@ -1,0 +1,43 @@
+.iconLeft{
+    position: absolute;
+    top: 35px;
+    left: 25px;
+}
+
+.iconRight{
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+}
+
+.seasonDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.seasonDisplay.winter i{
+    color: blue;
+    z-index: 1;
+}
+.seasonDisplay.summer i{
+    color: red;
+    z-index: 1;
+}
+.winter{
+    background-color:aliceblue;
+}
+.summer{
+    background-color: rgb(245, 185, 57);
+}
+.spinIcon{
+    animation: spin 4s infinite linear;
+}
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
